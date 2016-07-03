@@ -32,7 +32,7 @@ body.with-panel-left-reveal .views, body.with-panel-right-reveal .views {
 
 .panel {
     
-    background: rgb(239, 226, 226);
+    background: rgba(34, 33, 33, 0.69);
     /*background: rgb(231, 178, 8);*/
 }
 
@@ -54,7 +54,8 @@ body.with-panel-left-reveal .views, body.with-panel-right-reveal .views {
 }
 
 .list-block {
-      color: black;
+    
+    color: white;
     margin: 0px 0;
     font-size: 14px;
 }
@@ -67,7 +68,7 @@ body.with-panel-left-reveal .views, body.with-panel-right-reveal .views {
 }
 .panel{
 
-  border-right: 1px solid #e6cccc;
+/*  border-right: 1px solid #e6cccc;*/
 }
 
 .img-round{
@@ -148,4 +149,10 @@ body.with-panel-left-reveal .views, body.with-panel-right-reveal .views {
 .tabbar {
 
     top: -7px;
+}
+
+
+body.with-panel-left-cover .panel, body.with-panel-right-cover .panel {
+     box-shadow: 0 0 0px rgba(0,0,0,.5); 
+    color:white;
 }
