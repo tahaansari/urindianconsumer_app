@@ -40,12 +40,12 @@
       <!-- style="background-image: url('assets/img/drawer.png');" -->
       <div class="panel panel-left panel-cover" >
 
-         <div style="text-align:center;background:#e7b208" class="list-block media-list">
+         <div style="text-align:center;background:#313131" class="list-block media-list">
 
 
-            <img src="assets/img/profile.jpg" style="margin:10px 10px 0px 10px" class="img-round" width="100px" height="100px">
+            <img src="assets/img/profile.jpg" style="margin:30px 10px 0px 10px" class="img-round" width="100px" height="100px">
             <div class="item-title">Taha Ansari</div>
-            <div class="item-text" style="padding-bottom: 5px;border-bottom: 2px solid black;">taha.m.ansari@gmail.com</div>
+            <div class="item-text" style="padding-bottom: 5px;border-bottom: 2px solid #696464";>taha.m.ansari@gmail.com</div>
 
 
             <!-- <ul>
@@ -69,20 +69,18 @@
          <div class="list-block">
             <ul>
                <li>
-                  <a href="#" data-popup=".popup-signin" class="item-link item-content  close-panel open-popup">
+                  <a href="login-screen-page.html" class="item-link item-content close-panel">
                      <div class="item-media"><i class="fa fa-sign-in" aria-hidden="true"></i></div>
                      <div class="item-inner">
                         <div class="item-title">Login</div>
-                        <!-- <div class="item-after">Label</div> -->
                      </div>
                   </a>
                </li>
                <li>
-                  <a href="#" data-popup=".popup-register" class="item-link item-content  close-panel open-popup">
+                  <a href="register-screen-page.html" class="item-link item-content close-panel">
                      <div class="item-media"><i class="fa fa-sign-in" aria-hidden="true"></i></div>
                      <div class="item-inner">
                         <div class="item-title">Sign Up</div>
-                        <!-- <div class="item-after">Label</div> -->
                      </div>
                   </a>
                </li>
@@ -96,18 +94,17 @@
                      </div>
                   </a>
                </li>
-               <li>
+               <!-- <li>
                   <a href="#" class="item-link item-content">
                      <div class="item-media"><i class="fa fa-book" aria-hidden="true"></i></div>
                      <div class="item-inner">
                         <div class="item-title">Read Review</div>
-                        <!-- <div class="item-after"><span class="badge">5</span></div> -->
                      </div>
                   </a>
-               </li>
+               </li> -->
                <li>
-                  <a href="#" class="item-link item-content">
-                     <div class="item-media"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+                  <a href="#" data-picker=".picker-1" class="item-link item-content close-panel open-picker">
+                     <div class="item-media"><i class="fa fa-pencil" aria-hidden="true"></i></i></div>
                      <div class="item-inner">
                         <div class="item-title">Write Review</div>
                         <!-- <div class="item-after">Another label</div> -->
@@ -115,7 +112,7 @@
                   </a>
                </li>
                <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#"  data-picker=".picker-2" class="item-link item-content close-panel open-picker">
                      <div class="item-media"><i class="fa fa-plus-square" aria-hidden="true"></i></i></div>
                      <div class="item-inner">
                         <div class="item-title">Add Product</div>
@@ -125,16 +122,16 @@
                </li>
                <li>
                   <a href="#" class="item-link item-content">
-                     <div class="item-media"><i class="fa fa-user" aria-hidden="true"></i></div>
+                     <div class="item-media"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
                      <div class="item-inner">
-                        <div class="item-title">My Profile</div>
+                        <div class="item-title">Edit Profile</div>
                         <!-- <div class="item-after">Another label</div> -->
                      </div>
                   </a>
                </li>
                  <li>
                   <a href="#" class="item-link item-content">
-                     <div class="item-media"><i class="fa fa-user" aria-hidden="true"></i></div>
+                     <div class="item-media"><i class="fa fa-sign-out" aria-hidden="true"></i></i></div>
                      <div class="item-inner">
                         <div class="item-title">Logout</div>
                         <!-- <div class="item-after">Another label</div> -->
@@ -145,106 +142,215 @@
             <!-- <div class="list-block-label">List block label text goes here</div> -->
          </div>
       </div>
-      <!-- About Popup -->
-      <div class="popup popup-signin">
-         <div class="content-block">
-            <!-- Top Navbar. In Material theme it should be inside of the page-->
-            <div class="navbar">
-               <div class="navbar-inner">
-                  <div class="left">
-                     <a href="#" class="link icon-only back close-popup">
-                     <i class="icon icon-back"></i>
-                     </a>
-                  </div>
-                  <div class="center">Login Screen</div>
+
+      <div class="picker-modal picker-1">
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <div class="left"></div>
+            <div class="right" style="padding: 10px;"><a style="color:white" href="#" class="close-picker">Close</a></div>
+          </div>
+        </div>
+        <div class="picker-modal-inner" style="background-color: #e0dcdc;">
+          <div class="content-block">
+            <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="fa fa-search" aria-hidden="true"></i></div>
+                      <!-- <div class="item-title label">Search Product</div> -->
+                      <br>
+                      <div class="item-inner">
+                        
+                        <div class="item-input">
+                          <input type="text" placeholder="Search Your Product">
+
+                        </div>
+                        
+                      </div>
+
+                    </div>
+                    <br>
+                    <a href="write_review.html" class="close-picker">Write Review</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+            <div class="picker-modal picker-2">
+              <div class="toolbar">
+                <div class="toolbar-inner">
+                  <div class="left"></div>
+                  <div class="right" style="padding: 10px;"><a style="color:white" href="#" class="close-picker">Close</a></div>
+                </div>
+              </div>
+              <div class="picker-modal-inner" style="padding: 0px 10px;background-color: #e0dcdc;">
+                <div class="content-block">
+                  
+
+
+                 <div class="list-block">
+                      <ul>
+                       
+                        <li>
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <!-- <div class="item-title label">Product Name</div> -->
+                              <div class="item-input">
+                              <br>
+                                  <input type="text" placeholder="Enter Name" name="name">
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="align-top">
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <!-- <div class="item-title label">Product Description</div> -->
+                              <div class="item-input">
+                              <br>
+                                  <textarea placeholder="Enter Description"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="item-content">
+                            <div class="item-inner">
+                              <!-- <div class="item-title label">Email</div> -->
+                              <div class="item-input">
+                              <br>
+                                  <input type="text" placeholder="Enter Email" name="name">
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                       
+                      </ul>
+                    
+           
+
+                    <a href="#" class="button button-big button-fill button-raised color-pink cust-btn">Submit</a>
+
+                 </div>
+                </div>
+              </div>
+            </div>
+
+      <div class="popup popup-about">
+
+         <div class="navbar">
+            <div class="navbar-inner">
+               <div class="left">
+                  <a href="#" class="link icon-only close-popup">
+                  <i class="icon icon-back"></i>
+                  </a>
                </div>
+               <div class="center">Sub Category Screen</div>
+
             </div>
-            <!-- Scrollable page content -->
-            <div class="page-content">
-               <form>
-                  <div class="list-block">
-                     <ul>
-                        <li class="item-content">
-                           <div class="item-inner">
-                              <div class="item-title label">Email</div>
-                              <div class="item-input">
-                                 <input type="text" name="email" placeholder="Your Email"/>
-                              </div>
-                           </div>
-                        </li>
-                        <li class="item-content">
-                           <div class="item-inner">
-                              <div class="item-title label">Password</div>
-                              <div class="item-input">
-                                 <input type="password" name="password" placeholder="Your password"/>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="list-block">
-                     <ul>
-                        <li><a id="login" href="#" class="item-link list-button">Sign In</a></li>
-                     </ul>
-                  </div>
-               </form>
-            </div>
-            <!-- <p><a href="#" class="">Close popup</a></p> -->
+         </div>
+
+
+         <div class="content-block">
+
+           
+              <div class="item-content">
+                <div class="list-block">
+                  <ul>
+
+                    <a href="list.html" class="item-content close-popup">
+                    <li class="item-content">
+                      <div class="item-media"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title text-color">Mobile</div>
+                      </div>
+                    </li>
+                    </a>
+
+                   <a href="list.html" class="item-content close-popup">
+                    <li class="item-content">
+                      <div class="item-media"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title text-color">Tablets</div>
+                      </div>
+                    </li>
+                    </a>
+
+                    <a href="list.html" class="item-content close-popup">
+                    <li class="item-content">
+                      <div class="item-media"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title text-color">ISP</div>
+                      </div>
+                    </li>
+                    </a>
+
+                    <a href="list.html" class="item-content close-popup">
+                    <li class="item-content">
+                      <div class="item-media"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title text-color">Mobile Operators</div>
+                      </div>
+                    </li>
+                    </a>
+
+                    <a href="list.html" class="item-content close-popup">
+                    <li class="item-content">
+                      <div class="item-media"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title text-color">Mobile</div>
+                      </div>
+                    </li>
+                    </a>
+
+                   <a href="list.html" class="item-content close-popup">
+                    <li class="item-content">
+                      <div class="item-media"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title text-color">Tablets</div>
+                      </div>
+                    </li>
+                    </a>
+
+                    <a href="list.html" class="item-content close-popup">
+                    <li class="item-content">
+                      <div class="item-media"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title text-color">ISP</div>
+                      </div>
+                    </li>
+                    </a>
+
+                    <a href="list.html" class="item-content close-popup">
+                    <li class="item-content">
+                      <div class="item-media"><i class="fa fa-hand-o-right" aria-hidden="true"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title text-color">Mobile Operators</div>
+                      </div>
+                    </li>
+                    </a>
+
+
+                    
+                  </ul>
+                  <!-- <div class="list-block-label">List block label text goes here</div> -->
+                </div>
+              </div>
+            
+
+
+
+
          </div>
       </div>
-      <div class="popup popup-register">
-         <div class="content-block">
-            <!-- Top Navbar. In Material theme it should be inside of the page-->
-            <div class="navbar">
-               <div class="navbar-inner">
-                  <div class="left">
-                     <a href="#" class="link icon-only back close-popup">
-                     <i class="icon icon-back"></i>
-                     </a>
-                  </div>
-                  <div class="center">Register Screen</div>
-               </div>
-            </div>
-            <div class="page-content">
-               <form>
-                  <div class="list-block">
-                     <ul>
-                        <li class="item-content">
-                           <div class="item-inner">
-                              <div class="item-title label">Username</div>
-                              <div class="item-input">
-                                 <input type="text" name="username" placeholder="Your username"/>
-                              </div>
-                           </div>
-                        </li>
-                        <li class="item-content">
-                           <div class="item-inner">
-                              <div class="item-title label">Email</div>
-                              <div class="item-input">
-                                 <input type="email" name="email" placeholder="Your Email"/>
-                              </div>
-                           </div>
-                        </li>
-                        <li class="item-content">
-                           <div class="item-inner">
-                              <div class="item-title label">Password</div>
-                              <div class="item-input">
-                                 <input type="password" name="password" placeholder="Your Password"/>
-                              </div>
-                           </div>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="list-block">
-                     <ul>
-                        <li><a id="register" href="#" class="item-link list-button">Register</a></li>
-                     </ul>
-                  </div>
-               </form>
-            </div>
-            <!-- <p><a href="#" class="">Close popup</a></p> -->
-         </div>
-      </div>
+
       <!-- Views -->
       <div class="views">
          <!-- Your main view, should have "view-main" class -->
@@ -269,22 +375,22 @@
                         </div>
                      </div>
                   </div>
+
                   
-                  <div class="page-content" style="margin-top:56px;">
-                     <div class="content-block">
+                  
+                  <div class="page-content">
 
-                        <img src="assets/img/home.png" style="width: 100%;">
-
-                        <div class="toolbar tabbar" style="background: #696565;">
+                      <img src="assets/img/home.png" style="width: 100%;">
+                      <div class="toolbar tabbar" style="background: #696565;">
                            <div class="toolbar-inner">
                            <a href="#tab1" class="active tab-link">Latest Reviews</a>
                            <a href="#tab2" class="tab-link">Trending Reviews</a>
                            
                            <span class="tab-link-highlight" style="width: 33.3333%; transform: translate3d(0%, 0px, 0px);"></span></div>
-                        </div>
-                        <div class="tabs-swipeable-wrap swiper-container swiper-container-horizontal">
+                       </div>
+                       <div class="tabs-swipeable-wrap swiper-container swiper-container-horizontal">
                            <div class="tabs swiper-wrapper">
-                              <div id="tab1" class="page-content tab active swiper-slide swiper-slide-active" style="width: 360px;">
+                              <div id="tab1" class="tab active swiper-slide swiper-slide-active" style="width: 360px;">
                                  <div class="content-block">
 
                                       <div class="list-block media-list">
@@ -468,7 +574,7 @@
                                     
                                  </div>
                               </div>
-                              <div id="tab2" class="page-content tab swiper-slide swiper-slide-next" style="width: 360px;">
+                              <div id="tab2" class="tab swiper-slide swiper-slide-next" style="width: 360px;">
                                  <div class="content-block">
                                       
                                       <div class="list-block media-list">
@@ -654,7 +760,7 @@
                             
                            </div>
                         </div>
-                     </div>
+                     
                   </div>
                   <div class="speed-dial">
                      <!-- FAB inside will open Speed Dial actions -->
@@ -667,19 +773,20 @@
                      <!-- Speed Dial Actions -->
                      <div class="speed-dial-buttons">
                         <!-- First Speed Dial button -->
-                        <a href="#">
-                           <!-- <i class="icon demo-icon-email"></i> -->
-                           <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </a>
+                     
                         <!-- Second Speed Dial  button -->
                         <a href="#">
                            <!-- <i class="icon demo-icon-calendar"></i> -->
-                           <i class="fa fa-calendar" aria-hidden="true"></i>
+                           <!-- Write Review -->
+                           <i class="fa fa-plus-square" aria-hidden="true"></i>
+
                         </a>
-                        <!-- Third Speed Dial  button -->
+                       
                         <a href="#">
-                           <!-- <i class="icon demo-icon-upload"></i> -->
-                           <i class="fa fa-upload" aria-hidden="true"></i>
+                        <!-- <i class="icon demo-icon-email"></i> -->
+                        <!-- Write Review -->
+                           <i class="fa fa-pencil" aria-hidden="true"></i>
+
                         </a>
                      </div>
                   </div>
@@ -714,8 +821,10 @@
                </div> -->
          </div>
       </div>
+      <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
       <script type="text/javascript" src="cordova.js"></script>
       <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
       <script type="text/javascript" src="js/my-app.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
    </body>
 </html>
