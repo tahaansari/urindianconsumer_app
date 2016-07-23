@@ -1,3 +1,0 @@
-dack gray - #3d3d3d;
-light gray - #595959;
-yellow - #e7b208;

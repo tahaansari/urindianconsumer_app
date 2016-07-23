@@ -32,7 +32,8 @@ body.with-panel-left-reveal .views, body.with-panel-right-reveal .views {
 
 .panel {
     
-    background: rgba(34, 33, 33, 0.69);
+    background-color: rgba(255, 255, 255, 0.93);
+    /*background: rgba(84, 81, 81, 0.93);*/
     /*background: rgb(231, 178, 8);*/
 }
 
@@ -137,7 +138,7 @@ body.with-panel-left-reveal .views, body.with-panel-right-reveal .views {
 
 .list-block li.media-item .item-title-row, .list-block.media-list .item-title-row {
 
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .tabbar .tab-link-highlight {
@@ -296,5 +297,83 @@ label.star:before {
   position: absolute;
     width: 100%;
     bottom: 0;
+
+}
+
+.bg{
+
+    background: url('../assets/img/newproducts.jpg') no-repeat center center;
+    background-size: cover;
+
+}
+.white-text{
+
+  color: white;
+}
+
+.list-block li {
+    border-bottom: 1px solid #e3dddd;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0px 5px;
+}
+
+
+.list-block .item-link{
+
+  color: black;
+}
+
+.list-block .item-text{
+
+
+  color: #c8c5c5;
+}
+
+.list-block .floating-label, .list-block .label{
+  color: black;
+}
+
+.no-border li{
+
+  border:none;
+}
+
+.list-block ul:before{
+
+  display: none;
+
+}
+
+.list-block ul:after{
+
+  display: none;
+
+}
+
+
+.bottom-button{
+  
+    text-align: center;
+    position: absolute;
+    background-color: #595959;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+
+}
+    
+
+.social{
+
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+.social img{
+
+    width: 100%;
 
 }
